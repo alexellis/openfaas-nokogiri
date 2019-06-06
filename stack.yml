@@ -1,0 +1,11 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  wikipedia-title:
+    lang: ruby-http
+    handler: ./wikipedia-title
+    image: alexellis2/wikipedia-title:0.1.0
+
